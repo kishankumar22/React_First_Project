@@ -1,0 +1,231 @@
+/* General styles for the registration page */
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the registration form */
+.registration-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Heading for the form */
+.registration-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Form group styles */
+.registration-container div {
+  margin-bottom: 1rem;
+}
+
+.registration-container label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.registration-container input {
+  width: 93%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s;
+}
+
+.registration-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styles */
+.registration-container button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.registration-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Success and error messages */
+.registration-container p {
+  /* text-align: center; */
+  /* font-size: 0.2rem; */
+  margin-top: 1rem;
+}
+
+.registration-container p:nth-child(1) {
+  color: green;
+}
+
+.registration-container p.error {
+  color: red;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .registration-container {
+    padding: 1.5rem;
+  }
+
+  .registration-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .registration-container button {
+    font-size: 0.9rem;
+  }
+}
+/* Success and error messages */
+.registration-container p {
+  text-align: left;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* Success message style */
+.registration-container p.success {
+  color: green;
+}
+
+/* Error message style */
+.registration-container p.error {
+  color: red;
+}
+
+/* Password match feedback styles */
+.registration-container p.password-match {
+  color: green;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.registration-container p.password-mismatch {
+  color: red;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+/* Container for password input and icon */
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: 93%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.password-container i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;  /* Icon size */
+  cursor: pointer;
+  color: #007bff;
+}
+
+/* Password Strength Indicator */
+.strength {
+  font-weight: bold;
+  font-size: 0.8rem;
+  /* text-align: right; */
+}
+
+.strength.very-low {
+  color: red;
+}
+
+.strength.low {
+  color: orange;
+}
+
+.strength.medium {
+  color: rgb(66, 20, 204);
+}
+
+.strength.strong {
+  color: green;
+}
+
+.strength.very-strong {
+  color: darkgreen;
+}
+
+/* Flex container for password tools */
+.password-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  background-color: transparent;
+}
+
+/* Show/Hide Password Button */
+.password-tools button {
+  background: transparent; /* No background color */
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 0.8rem; /* Smaller font size */
+  text-align: left;
+  padding: 0; /* Remove default padding */
+}
+
+.password-tools button:hover {
+  background-color: transparent; /* Ensure no hover background color */
+}
+
+/* Password Strength Indicator */
+.strength {
+  font-weight: 100;
+  font-size: 0.5rem; /* Smaller font size */
+  text-align: right;
+  margin-left: auto; /* Align text to the right */
+}
+
+.strength.very-low {
+  color: red;
+}
+
+.strength.low {
+  color: orange;
+}
+
+.strength.medium {
+  color: rgb(66, 20, 204);
+}
+
+.strength.strong {
+  color: green;
+}
+
+.strength.very-strong {
+  color: darkgreen;
+}

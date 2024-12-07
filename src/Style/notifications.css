@@ -1,0 +1,42 @@
+.NotificationWrapper {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  position: relative;
+  padding: 1px 5px;
+}
+
+.NotificationList {
+  display: flex;
+  flex-direction: column;
+  animation: scroll 10s linear infinite;
+}
+
+.NotificationItem {
+  padding: 10px;
+  font-size: 16px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  color: blue;
+}
+
+
+.NotificationWrapper :hover{
+
+  animation-play-state: paused;
+}
+.NotificationList :hover{
+  color: red;
+
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
